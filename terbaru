@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ASUPAN MALAM</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#000;
+    overflow:hidden;
+}
+
+/* BACKGROUND */
+.bg{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:url('https://vidcounder.blogspot.com/2026/05/blog-post.html') center/cover;
+    filter:blur(8px);
+    transform:scale(1.1);
+    z-index:-2;
+}
+
+.overlay{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.7);
+    z-index:-1;
+}
+
+/* HEADER */
+.header{
+    width:100%;
+    height:70px;
+    background:#111;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 20px;
+    color:white;
+}
+
+.logo{
+    font-size:40px;
+    font-weight:bold;
+}
+
+/* UPLOAD BUTTON */
+.upload-btn{
+    background:#06112b;
+    color:white;
+    padding:12px 30px;
+    border-radius:40px;
+    text-decoration:none;
+    font-size:20px;
+    font-weight:bold;
+    transition:0.2s;
+}
+
+.upload-btn:hover{
+    transform:scale(1.05);
+}
+
+/* VIDEO AREA */
+.video-area{
+    width:100%;
+    height:320px;
+    background:black;
+    position:relative;
+    overflow:hidden;
+    cursor:pointer;
+}
+
+/* THUMBNAIL IMAGE */
+.video-thumb{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* PLAY BUTTON */
+.play-btn{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    background:rgba(255,255,255,0.15);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:70px;
+    color:white;
+    backdrop-filter:blur(5px);
+    animation:pulse 1.5s infinite;
+}
+
+@keyframes pulse{
+    0%{transform:translate(-50%,-50%) scale(1);}
+    50%{transform:translate(-50%,-50%) scale(1.08);}
+    100%{transform:translate(-50%,-50%) scale(1);}
+}
+
+/* POPUP */
+.popup{
+    width:340px;
+    background:#161616;
+    color:white;
+    padding:25px;
+    border-radius:8px;
+    position:absolute;
+    top:180px;
+    left:50%;
+    transform:translateX(-50%);
+    box-shadow:0 0 30px rgba(0,0,0,0.5);
+}
+
+.popup h1{
+    font-size:34px;
+    margin-bottom:15px;
+}
+
+.popup p{
+    font-size:18px;
+    line-height:1.5;
+}
+
+/* BUTTONS */
+.buttons{
+    display:flex;
+    justify-content:space-between;
+    margin-top:30px;
+}
+
+.btn{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    font-size:55px;
+    font-weight:bold;
+    transition:0.2s;
+}
+
+.btn:hover{
+    transform:scale(1.08);
+}
+
+.red{
+    background:#ff0033;
+    color:black;
+}
+
+.green{
+    background:#24ff00;
+    color:black;
+    box-shadow:0 0 0 10px rgba(255,255,255,0.06);
+}
+
+/* FOOTER */
+.footer{
+    position:absolute;
+    bottom:20px;
+    width:100%;
+    text-align:center;
+    color:#888;
+    font-size:18px;
+}
+
+.footer span{
+    margin:0 15px;
+}
+
+/* RESPONSIVE */
+@media(max-width:500px){
+
+    .popup{
+        width:90%;
+    }
+
+    .logo{
+        font-size:32px;
+    }
+
+    .upload-btn{
+        padding:10px 20px;
+        font-size:17px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="bg"></div>
+<div class="overlay"></div>
+
+<!-- HEADER -->
+<div class="header">
+
+    <div style="font-size:45px;">✕</div>
+
+    <div class="logo">videy</div>
+
+    <!-- TOMBOL UPLOAD DIRECT LINK -->
+    <a href="https://www.profitablecpmratenetwork.com/jc4bzkf1?key=51e86312c82641cb4638ec283e05655d" class="upload-btn">
+        Upload
+    </a>
+
+</div>
+
+<!-- VIDEO THUMBNAIL -->
+<div class="video-area"
+onclick="window.location.href='https://www.profitablecpmratenetwork.com/jc4bzkf1?key=51e86312c82641cb4638ec283e05655d'">
+
+    <!-- GANTI FOTO DISINI -->
+    <img src="kamu.jpg"
+    class="video-thumb">
+
+    <!-- PLAY BUTTON -->
+    <div class="play-btn">
+        ▶
+    </div>
+
+</div>
+
+<!-- POPUP -->
+<div class="popup">
+
+    <h1>Perhatian!</h1>
+
+    <p>
+        Konfirmasikan bahwa Anda BERUSIA DI ATAS 18 TAHUN,
+        lalu klik "IZINKAN" untuk melihat situs tersebut.
+    </p>
+
+    <div class="buttons">
+
+        <!-- TOMBOL MERAH -->
+        <a href="https://www.profitablecpmratenetwork.com/jc4bzkf1?key=51e86312c82641cb4638ec283e05655d" class="btn red">
+            ✕
+        </a>
+
+        <!-- TOMBOL HIJAU -->
+        <a href="https://www.profitablecpmratenetwork.com/jc4bzkf1?key=51e86312c82641cb4638ec283e05655d" class="btn green">
+            ✓
+        </a>
+
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+
+    <span>Terms of Service</span>
+
+    <span>Report Abuse</span>
+
+</div>
+
+</body>
+</html>
